@@ -1,0 +1,17 @@
+.polaris-Button--primary {
+  background-color: #5c6ac4;
+}
+
+.custom-button {
+  background-color: #0070f3 !important;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.custom-button:hover {
+  background-color: #005bb5;
+}

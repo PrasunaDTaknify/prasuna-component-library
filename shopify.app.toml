@@ -1,0 +1,33 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+client_id = "35966d38f7a76c90577125546b4ad47b"
+name = "polaris-component"
+handle = "polaris-component"
+application_url = "https://recovered-mtv-inc-vehicle.trycloudflare.com"
+embedded = true
+
+[build]
+automatically_update_urls_on_dev = true
+dev_store_url = "taknify-container.myshopify.com"
+include_config_on_deploy = true
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "write_products"
+
+[auth]
+redirect_urls = [
+  "https://recovered-mtv-inc-vehicle.trycloudflare.com/auth/callback",
+  "https://recovered-mtv-inc-vehicle.trycloudflare.com/auth/shopify/callback",
+  "https://recovered-mtv-inc-vehicle.trycloudflare.com/api/auth/callback"
+]
+
+[webhooks]
+api_version = "2024-07"
+
+  [[webhooks.subscriptions]]
+  topics = [ "app/uninstalled" ]
+  uri = "/webhooks"
+
+[pos]
+embedded = false
